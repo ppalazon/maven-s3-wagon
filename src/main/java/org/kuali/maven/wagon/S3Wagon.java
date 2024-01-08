@@ -15,6 +15,7 @@
  */
 package org.kuali.maven.wagon;
 
+import com.amazonaws.util.IOUtils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,7 +26,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.maven.wagon.ResourceDoesNotExistException;
 import org.apache.maven.wagon.TransferFailedException;
@@ -249,8 +249,8 @@ public class S3Wagon extends AbstractWagon implements RequestFactory {
 				out.write(buffer, 0, length);
 			}
 		} finally {
-			IOUtils.closeQuietly(in);
-			IOUtils.closeQuietly(out);
+			IOUtils.closeQuietly(in, null);
+			IOUtils.closeQuietly(out, null);
 		}
 		// then move, to have an atomic operation to guarantee we don't have a partially downloaded file on disk
 		Files
@@ -567,7 +567,7 @@ public class S3Wagon extends AbstractWagon implements RequestFactory {
 		if (StringUtils.isEmpty(value)) {
 			return defaultValue;
 		} else {
-			return new Integer(value);
+			return Integer.parseInt(value);
 		}
 	}
 
