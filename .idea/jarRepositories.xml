@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="antara-releases-aws-codeartifact" />
+      <option name="name" value="Antara Repository Releases on AWS CodeArtifact" />
+      <option name="url" value="https://antara-730401703423.d.codeartifact.eu-west-1.amazonaws.com/maven/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss-ga-repository" />
+      <option name="name" value="jboss-ga-repository" />
+      <option name="url" value="https://maven.repository.redhat.com/techpreview/all" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jcenter-repository" />
+      <option name="name" value="JCenter" />
+      <option name="url" value="https://jcenter.bintray.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss-public-repository-group" />
+      <option name="name" value="JBoss Public Maven Repository Group" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/groups/developer" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="antara-3rdparty-aws-codeartifact" />
+      <option name="name" value="Antara Repository Releases on AWS CodeArtifact" />
+      <option name="url" value="https://antara-730401703423.d.codeartifact.eu-west-1.amazonaws.com/maven/thirdparty" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sonatype-releases" />
+      <option name="name" value="Sonatype Releases" />
+      <option name="url" value="https://oss.sonatype.org/content/repositories/releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="antara-snapshots-aws-codeartifact" />
+      <option name="name" value="Antara Maven Repository Snapshot on AWS CodeArtifact" />
+      <option name="url" value="https://antara-730401703423.d.codeartifact.eu-west-1.amazonaws.com/maven/snapshots" />
+    </remote-repository>
+  </component>
+</project>
