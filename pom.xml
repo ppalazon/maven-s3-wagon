@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.ppalazon</groupId>
     <artifactId>maven-s3-wagon</artifactId>
-    <version>1.3.4</version>
+    <version>1.3.4-SNAPSHOT</version>
     <name>Maven S3 Wagon</name>
     <inceptionYear>2010</inceptionYear>
     <description>
@@ -165,7 +165,7 @@
         </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:https://github.com/ppalazon/maven-s3-wagon.git</connection>
+        <connection>scm:git:git@github.com:ppalazon/maven-s3-wagon.git</connection>
         <url>https://github.com/ppalazon/maven-s3-wagon</url>
         <tag>v1.3.4</tag>
     </scm>
