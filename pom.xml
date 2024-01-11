@@ -17,7 +17,14 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.github.ppalazon</groupId>
+
+    <parent>
+        <groupId>ws.antara</groupId>
+        <artifactId>antara-parent</artifactId>
+        <version>33</version>
+    </parent>
+
+    <groupId>ws.antara.maven</groupId>
     <artifactId>maven-s3-wagon</artifactId>
     <version>1.3.5-SNAPSHOT</version>
     <name>Maven S3 Wagon</name>
@@ -29,6 +36,7 @@
     </description>
     <url>https://github.com/ppalazon/maven-s3-wagon</url>
     <properties>
+        <automatic.module.name>${project.groupId}.maven.s3.wagon</automatic.module.name>
         <project.scm.vendor>git</project.scm.vendor>
         <project.java.version>11</project.java.version>
         <maven.compiler.source>11</maven.compiler.source>
@@ -191,17 +199,6 @@
             <timezone>-7</timezone>
         </developer>
     </developers>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>oss.sonatype.org</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>oss.sonatype.org</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
     <profiles>
         <profile>
