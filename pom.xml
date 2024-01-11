@@ -174,8 +174,9 @@
     </dependencies>
     <scm>
         <connection>scm:git:git@github.com:ppalazon/maven-s3-wagon.git</connection>
+        <developerConnection>scm:git:git@github.com:ppalazon/maven-s3-wagon.git</developerConnection>
         <url>https://github.com/ppalazon/maven-s3-wagon</url>
-        <tag>v1.3.4</tag>
+        <tag>HEAD</tag>
     </scm>
     <licenses>
         <license>
